@@ -1,0 +1,11 @@
+/.idea
+
+/atelier-client/.idea
+/atelier-client/atelier-client.iml
+/atelier-client/webpack-stats.json
+/atelier-client/node_modules
+/atelier-client/typings
+
+/atelier-server/.idea
+/atelier-server/atelier.iml
+/atelier-server/target
