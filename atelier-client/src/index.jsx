@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
+import * as ReactDOM from 'react-dom'
+import * as React from 'react'
 import {Provider} from 'react-redux'
 import {Router, Route, browserHistory, IndexRedirect} from 'react-router'
 import thunkMiddleware from 'redux-thunk'

@@ -7,7 +7,6 @@ module.exports = {
     context: __dirname,
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/dev-server',
         './src/index'
     ],
     output: {
@@ -26,19 +25,14 @@ module.exports = {
     ],
 
     module: {
-        // preLoaders: [
-        //     {
-        //         test: /\.jsx?$/,
-        //         loader: 'eslint-loader',
-        //         exclude: /node_modules/
-        //     }
-        // ],
-        loaders: [
+        preLoaders: [
             {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'react-hot'
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/
             },
+        ],
+        loaders: [
             {
                 test: /\.jsx?$/,
                 loader: 'babel',
@@ -74,7 +68,7 @@ module.exports = {
 
     resolve: {
         modulesDirectories: ['node_modules'],
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', '.ts', '.tsx']
     },
 
     // cf https://webpack.github.io/docs/configuration.html#devtool
