@@ -7,7 +7,6 @@ module.exports = {
     context: __dirname,
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/dev-server',
         './src/index'
     ],
     output: {
@@ -34,11 +33,6 @@ module.exports = {
         //     }
         // ],
         loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'react-hot'
-            },
             {
                 test: /\.jsx?$/,
                 loader: 'babel',
