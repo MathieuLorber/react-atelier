@@ -25,13 +25,6 @@ module.exports = {
     ],
 
     module: {
-        // preLoaders: [
-        //     {
-        //         test: /\.jsx?$/,
-        //         loader: 'eslint-loader',
-        //         exclude: /node_modules/
-        //     }
-        // ],
         loaders: [
             {
                 test: /\.jsx?$/,
@@ -68,7 +61,7 @@ module.exports = {
 
     resolve: {
         modulesDirectories: ['node_modules'],
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', '.ts', '.tsx']
     },
 
     // cf https://webpack.github.io/docs/configuration.html#devtool
