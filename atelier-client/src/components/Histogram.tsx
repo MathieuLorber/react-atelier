@@ -4,7 +4,11 @@ import * as styles from './Histogram.scss';
 const columnWidth = 20;
 const higherColumnHeight = 200;
 
-export default class Histogram extends React.Component {
+interface HistogramProps {
+    data: Array<number>
+}
+
+export default class Histogram extends React.Component<HistogramProps, {}> {
 
     // commented because of test =x
     // static propTypes = {
